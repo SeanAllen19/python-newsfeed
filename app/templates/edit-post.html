@@ -2,6 +2,7 @@
 
 {% block body %}
 <article>
+
   <a href="/dashboard"> &larr; Back to dashboard</a>
   <h2>
     Edit Post
@@ -9,19 +10,21 @@
   <form class="edit-post-form">
     <div>
       <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{post.post_url}})</span>
+      <span>({{post.created_at|format_date}})</span>
     </div>
     <div>
-      {{post.vote_count}} point(s) by you on {{post.created_at}}
+      {{post.vote_count}} point(s) by you on {{post.created_at | format_date}}
       |
-      <a href="/post/{{post.id}}">{{post.comments|length}} comment(s)</a>
+      <a href="/post/{{post.id}}">{{post.comments|length | format_plural('point')}} comment(s)</a>
     </div>
     <button type="submit">Save post</button>
     <button type="button" class="delete-post-btn">Delete post</button>
   </form>
+
 </article>
 
 <form class="comment-form">
+
   <div>
     <textarea name="comment-body"></textarea>
   </div>
@@ -29,7 +32,9 @@
   <div>
     <button type="submit">add comment</button>
   </div>
+
 </form>
+
 
 {% with comments=post.comments %}
   {% include "partials/comments.html" %}
