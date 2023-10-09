@@ -4,11 +4,10 @@ from sqlalchemy.orm import validates
 import bcrypt
 
 salt = bcrypt.gensalt()
+
 class User(Base):
    
   __tablename__ = 'users'
-
- 
   id = Column(Integer, primary_key=True)
   username = Column(String(50), nullable=False)
   email = Column(String(50), nullable=False, unique=True)
@@ -27,3 +26,9 @@ class User(Base):
 
    # encrypt password
    return bcrypt.hashpw(password.encode('utf-8'), salt)
+  
+  def verify_password(self, password):
+    return bcrypt.checkpw(
+    password.encode('utf-8'),
+    self.password.encode('utf-8')
+  )
