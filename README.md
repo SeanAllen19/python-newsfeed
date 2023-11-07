@@ -5,7 +5,6 @@
 
   ## Table of Contents
   - [Description](#Description)
-  - [Installation](#Installation)
   - [Usage](#Usage)
   - [License](#License)
   - [Contributing](#Contributing)
@@ -15,19 +14,17 @@
   
   ## Description
 
-  --
-
-  ---
-
-  ## Installation
-
-  --
+  The original version of this web app was built using Node.js as the back-end language and Handlebars.js as the templating engine. What makes this project special is the transition from the original Node.js foundation to the power of Python. I decided to harness the versatility and elegance of Python, along with the Python Flask framework, to reimagine and refine the application's user interfaces. 
+  
+  "Just Tech News" is a dynamic website where users can actively engage with the latest technology news and updates. They have the power to post their favorite articles, upvote the stories that matter most to them, and join discussions by leaving comments.
 
   ---
 
   ## Usage
 
-  --
+  Check out my project below! 
+  
+  https://technewsfeed-d14ed099e6c2.herokuapp.com/
 
   ---
 
@@ -45,15 +42,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
   ---  
 
-  ## Contributing
+  ## Contributing Tech
 
-  --
+  
+  - Python
+  - pip
+  - Flask
+  - SQLAlchemy
+  - PyMySQL
+  - bcrypt
+  - cryptography
+  - python-dotenv
+  - Gunicorn (Green Unicorn)
+   
 
   ---
 
   ## Test
 
-  --
+  Feel free to clone and run it on your device. For any other testing questions feel free to email me.
 
   ---
 
