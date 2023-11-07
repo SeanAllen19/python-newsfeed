@@ -14,9 +14,11 @@
   
   ## Description
 
+  "Just Tech News" is a dynamic website where users can actively engage with the latest technology news and updates. They have the power to post their favorite articles, upvote the stories that matter most to them, and join discussions by leaving comments.
+  
   The original version of this web app was built using Node.js as the back-end language and Handlebars.js as the templating engine. What makes this project special is the transition from the original Node.js foundation to the power of Python. I decided to harness the versatility and elegance of Python, along with the Python Flask framework, to reimagine and refine the application's user interfaces. 
   
-  "Just Tech News" is a dynamic website where users can actively engage with the latest technology news and updates. They have the power to post their favorite articles, upvote the stories that matter most to them, and join discussions by leaving comments.
+
 
   ---
 
